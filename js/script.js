@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".onclose").hide();
     var strings = ["<span>Web Developer</span>", "<span>UX/UI Designer</span>", "<span>Software Developer</span>"];
     var strlen = strings.length;
     var i = 0;
