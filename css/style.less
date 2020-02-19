@@ -1,0 +1,212 @@
+//Bold font
+@charset "utf-8"; // set charset to css file
+
+@font-face {
+    font-family: "soursesans-bold"; // font family
+    src: url("../fonts/SourceSansPro-Bold.ttf"); // source
+}
+//regular font
+@font-face {
+    font-family: "soursesans-regular"; // font family
+    src: url("../fonts/SourceSansPro-Regular.ttf"); // source
+}
+
+@widthLeft: 15%;
+@height: 100%;
+@bg-color: #17181B;
+@fg-color: #B1986F;
+
+html, body {
+    background-image: url("../images/mountains.jpg");
+    background-repeat: no-repeat;
+}
+
+* {
+    font-family: "soursesans-regular"
+}
+
+.left-container {
+    width: @widthLeft;
+    height: @height;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border: none;
+    z-index: 998;
+
+    .onclose {
+        font-size: 40px;
+        font-weight: bold;
+        color: @fg-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 30px;
+        text-decoration: none;
+    }
+
+    .inner-container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: @bg-color;
+        color: @fg-color;
+        margin: 0;
+        padding: 0;
+        z-index: 990;
+
+        .footer {
+            width: 100%;
+            border: none;
+            border-top: 1px solid @fg-color;
+            position: absolute;
+            height: 80px;
+            bottom: 0;
+            left: 0;
+
+            p {
+                font-size: 12px;
+                font-family: "soursesans-regular";
+            }
+
+            a {
+                color: @fg-color;
+                text-decoration: none;
+                font-size: 20px;
+                padding: 6px 10px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes fade { from{opacity: 0;} to{opacity: 1;}}
+@-o-keyframes fade { from{opacity: 0;} to{opacity: 1;}}
+@-ms-keyframes fade { from{opacity: 0;} to{opacity: 1;}}
+@-moz-keyframes fade { from{opacity: 0;} to{opacity: 1;}}
+@keyframes fade { from{opacity: 0;} to{opacity: 1;}}
+
+.layer {
+    border: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(23, 24, 27, 0.5);
+    right: 0;
+    top: 0;
+
+    h1 {
+        font-family: "soursesans-regular";
+        color: #ffffff;
+        padding-top: 250px;
+        font-weight: bold;
+        font-size: 45px;
+        z-index: 1;
+
+        span {
+            color: @fg-color;
+            z-index: 1;
+        }
+    }
+
+    p {
+        color: @fg-color;
+        font-size: 25px;
+        color: #ffffff;
+        z-index: 1;
+
+        span {
+            text-decoration: underline solid @fg-color;
+            font-weight: bold;
+            z-index: 1;
+
+            span {
+                text-decoration: underline solid @fg-color;
+                font-weight: bold;
+                -webkit-animation: fade 0.7s;
+                -moz-animation: fade 0.7s;
+                -ms-animation: fade 0.7s;
+                -o-animation: fade 0.7s;
+                animation: fade 0.7s;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.menu {
+    width: 100%;
+    margin-top: 150px;
+    padding: 0;
+
+    li {
+        float: left;
+        width: 100%;
+        font-size: 17px;
+
+        a {
+            color: @fg-color;
+            display: block;
+            padding: 16px 18px;
+            width: 100%;
+            text-decoration: none;
+            -webkit-transition-duration: 0.5s;
+            -ms-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+
+            &:hover {
+                text-decoration: none;
+                background-color: @fg-color;
+                color: @bg-color;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+
+.menuButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-color: @bg-color;
+    color: @fg-color;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+
+    .menu-line {
+        position: fixed;
+        margin-left: 1px;
+        width: 50px;
+        margin-top: 16px;
+        height: 3px;
+        background-color: @fg-color;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .left-container {width: 0;}
+    .layer {width: 100%;}
+    #d {
+        float: center;
+    }
+    .onclose {font-size: 40px;
+        font-weight: bold;
+        color: @fg-color;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 30px;
+        text-decoration: none;}
+    .menuButton {display: block;}
+}

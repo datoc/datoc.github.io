@@ -1,0 +1,226 @@
+@charset "utf-8";
+@font-face {
+  font-family: "soursesans-bold";
+  src: url("../fonts/SourceSansPro-Bold.ttf");
+}
+@font-face {
+  font-family: "soursesans-regular";
+  src: url("../fonts/SourceSansPro-Regular.ttf");
+}
+html,
+body {
+  background-image: url("../images/mountains.jpg");
+  background-repeat: no-repeat;
+}
+* {
+  font-family: "soursesans-regular";
+}
+.left-container {
+  width: 15%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border: none;
+  z-index: 998;
+}
+.left-container .onclose {
+  font-size: 40px;
+  font-weight: bold;
+  color: #B1986F;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px;
+  text-decoration: none;
+}
+.left-container .inner-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #17181B;
+  color: #B1986F;
+  margin: 0;
+  padding: 0;
+  z-index: 990;
+}
+.left-container .inner-container .footer {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #B1986F;
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+}
+.left-container .inner-container .footer p {
+  font-size: 12px;
+  font-family: "soursesans-regular";
+}
+.left-container .inner-container .footer a {
+  color: #B1986F;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 10px;
+  display: inline-block;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.layer {
+  border: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 85%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(23, 24, 27, 0.5);
+  right: 0;
+  top: 0;
+}
+.layer h1 {
+  font-family: "soursesans-regular";
+  color: #ffffff;
+  padding-top: 250px;
+  font-weight: bold;
+  font-size: 45px;
+  z-index: 1;
+}
+.layer h1 span {
+  color: #B1986F;
+  z-index: 1;
+}
+.layer p {
+  color: #B1986F;
+  font-size: 25px;
+  color: #ffffff;
+  z-index: 1;
+}
+.layer p span {
+  text-decoration: underline solid #B1986F;
+  font-weight: bold;
+  z-index: 1;
+}
+.layer p span span {
+  text-decoration: underline solid #B1986F;
+  font-weight: bold;
+  -webkit-animation: fade 0.7s;
+  -moz-animation: fade 0.7s;
+  -ms-animation: fade 0.7s;
+  -o-animation: fade 0.7s;
+  animation: fade 0.7s;
+  z-index: 1;
+}
+.menu {
+  width: 100%;
+  margin-top: 150px;
+  padding: 0;
+}
+.menu li {
+  float: left;
+  width: 100%;
+  font-size: 17px;
+}
+.menu li a {
+  color: #B1986F;
+  display: block;
+  padding: 16px 18px;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.menu li a:hover {
+  text-decoration: none;
+  background-color: #B1986F;
+  color: #17181B;
+  transition-duration: 0.5s;
+}
+.menuButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #17181B;
+  color: #B1986F;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+}
+.menuButton .menu-line {
+  position: fixed;
+  margin-left: 1px;
+  width: 50px;
+  margin-top: 16px;
+  height: 3px;
+  background-color: #B1986F;
+}
+@media screen and (max-width: 768px) {
+  .left-container {
+    width: 0;
+  }
+  .layer {
+    width: 100%;
+  }
+  #d {
+    float: center;
+  }
+  .onclose {
+    font-size: 40px;
+    font-weight: bold;
+    color: #B1986F;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px;
+    text-decoration: none;
+  }
+  .menuButton {
+    display: block;
+  }
+}
