@@ -32,4 +32,78 @@ $(document).ready(function() {
     $(window).on("load", function() {
         $(".onclose").hide();
     });
+
+    var nameValue = $("input[type=\"text\"]"); // get value from name field
+    var mailValue = $("input[type=\"email\"]"); // get value from mail field
+    var textValue = $("#msg"); // get value from text field
+
+    $("form[method=\"get\"]").on("submit", function() {
+        if(nameValue.val() == "" || nameValue.val() == null) {
+            nameValue.css({
+                "border" : "2px solid red",
+                "color" : "red"
+            });
+            return false;
+        }else if(mailValue.val() == "" || mailValue.val() == null) {
+            mailValue.css({
+                "border" : "2px solid red",
+                "color" : "red"
+            });
+            return false;
+        }else if(textValue.val() == "" || textValue.val() == null) {
+            textValue.css({
+                "border" : "2px solid red",
+                "color" : "red"
+            });
+            return false;
+        }
+    });
+
+    //name field validation during key up
+    nameValue.keyup(function() {
+        if($(this).val() != "" || $(this).val() != null) {
+            $(this).css({
+                "border" : "2px solid #B1986F",
+                "color" : "#B1986F"
+            });
+            return false;
+        }else if($(this).val() == "" || $(this).val() == null) {
+            $(this).css({
+                "border" : "2px solid red",
+                "color" : "red"
+            });
+        }
+    });
+
+    //mail field validation during key up
+    mailValue.keyup(function() {
+        if($(this).val() != "" || $(this).val() != null) {
+            $(this).css({
+                "border" : "2px solid #B1986F",
+                "color" : "#B1986F"
+            });
+            return false;
+        }else if($(this).val() == "" || $(this).val() == null) {
+            $(this).css({
+                "border" : "2px solid red",
+                "color" : "red"
+            });
+        }
+    });
+
+    //text field validation during key up
+    textValue.keyup(function() {
+        if($(this).val() != "" || $(this).val() != null) {
+            $(this).css({
+                "border" : "2px solid #B1986F",
+                "color" : "#B1986F"
+            });
+            return false;
+        }else if($(this).val() == "" || $(this).val() == null) {
+            $(this).css({
+                "border" : "2px solid red",
+                "color" : "red"
+            });
+        }
+    });
 });

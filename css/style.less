@@ -297,3 +297,66 @@ html, body {
         width: @progress-width - 180px;
     }
 }
+
+
+input[type="text"] {
+    padding: 8px 10px;
+    background-color: @mainbg;
+    outline: none;
+    color: @fg-color;
+    border-radius: 0px;
+    border: 2px solid @fg-color;
+    margin: 10px;
+    position: relative;
+}
+
+input[type="email"] {
+    padding: 8px 10px;
+    background-color: @mainbg;
+    outline: none;
+    color: @fg-color;
+    border-radius: 0px;
+    border: 2px solid @fg-color;
+    margin: 10px;
+    position: relative;
+}
+
+.txt {
+    padding: 8px 12px;
+    background-color: @mainbg;
+    outline: none;
+    color: @fg-color;
+    border-radius: 0px;
+    border: 2px solid @fg-color;
+    position: relative;
+    margin-left: 10px;
+    height: 200px;
+    resize: none;
+}
+
+@media screen and (max-width: 768px) {
+    .txt {
+        padding: 8px 10px;
+        background-color: @mainbg;
+        outline: none;
+        color: @fg-color;
+        border-radius: 0px;
+        border: 2px solid @fg-color;
+        position: relative;
+        margin-left: 10px;
+        height: 200px;
+        resize: none;
+        box-sizing: border-box !important;
+    }
+}
+
+.send {
+    margin-top: 20px;
+    padding: 8px 10px;
+    background-color: @fg-color;
+    color: @bg-color;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 0px;
+}
