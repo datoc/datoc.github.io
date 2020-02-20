@@ -21,7 +21,7 @@
 @bg-color: #17181B;
 @fg-color: #B1986F;
 @mainbg: #2C2D2F;
-@progress-width: 250px + 200px;
+@progress-width: 450px;
 @progress-height: 18px;
 @progressbg: #555555;
 
@@ -289,5 +289,11 @@ html, body {
         color: @bg-color;
         font-weight: bold;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .progress-skill {
+        width: @progress-width - 70;
     }
 }
