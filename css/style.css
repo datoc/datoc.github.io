@@ -298,6 +298,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .progress-skill {
-    width: 380px;
+    width: 350px;
   }
 }
