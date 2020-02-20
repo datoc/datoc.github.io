@@ -7,6 +7,10 @@
   font-family: "soursesans-regular";
   src: url("../fonts/SourceSansPro-Regular.ttf");
 }
+@font-face {
+  font-family: "pacifico";
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
 html,
 body {
   background-image: url("../images/mountains.jpg");
@@ -223,4 +227,72 @@ body {
   .menuButton {
     display: block;
   }
+}
+.main-container {
+  width: 85%;
+  height: 100%;
+  position: fixed;
+  background-color: #2C2D2F;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+.main-container .page-header {
+  border-bottom: 2px solid #B1986F;
+  border-bottom-style: dotted;
+  overflow: hidden;
+}
+.main-container .page-header h2 {
+  color: #B1986F;
+}
+.blocks {
+  border-right: 1px solid #B1986F;
+  border-right-style: dotted;
+}
+.blocks p {
+  color: white;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .blocks {
+    border-right: none;
+    border-bottom: 1px solid #B1986F;
+    border-bottom-style: dotted;
+  }
+}
+.btn-download {
+  padding: 12px 14px;
+  color: #B1986F;
+  background-color: #2C2D2F;
+  outline: none;
+  border: 2px solid #B1986F;
+  font-weight: bold;
+  -webkit-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  border-radius: 0;
+}
+.btn-download:hover {
+  transition-duration: 0.5s;
+  background-color: #B1986F;
+  color: #2C2D2F;
+}
+.progress-skill {
+  width: 450px;
+  height: 18px;
+  background-color: #555555;
+  overflow: hidden;
+}
+.progress-skill .progress-skill-inner {
+  background-color: #B1986F;
+  height: 100%;
+  color: #17181B;
+  font-weight: bold;
+  text-align: center;
 }

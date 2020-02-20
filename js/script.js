@@ -19,13 +19,14 @@ $(document).ready(function() {
             "width" : "100%"
         });
         $(".inner-container").css("z-index", 400);
-        $(this).css("z-index", "999");
+        $(this).hide();
         $(".menu").addClass("text-center");
         $(".onclose").show();
     });
 
     $(".onclose").click(function() {
         $(".left-container").fadeOut(300);
+        $(".menuButton").show();
     });
 
     $(window).on("load", function() {

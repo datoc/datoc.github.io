@@ -10,11 +10,20 @@
     font-family: "soursesans-regular"; // font family
     src: url("../fonts/SourceSansPro-Regular.ttf"); // source
 }
+//pacifico
+@font-face {
+    font-family: "pacifico";
+    src: url("../fonts/Pacifico-Regular.ttf");
+}
 
 @widthLeft: 15%;
 @height: 100%;
 @bg-color: #17181B;
 @fg-color: #B1986F;
+@mainbg: #2C2D2F;
+@progress-width: 250px + 200px;
+@progress-height: 18px;
+@progressbg: #555555;
 
 html, body {
     background-image: url("../images/mountains.jpg");
@@ -210,4 +219,75 @@ html, body {
         padding: 30px;
         text-decoration: none;}
     .menuButton {display: block;}
+}
+
+.main-container {
+    width: 85%;
+    height: 100%;
+    position: fixed;
+    background-color: @mainbg;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+
+    .page-header {
+        border-bottom: 2px solid @fg-color;
+        border-bottom-style: dotted;
+        overflow: hidden;
+
+        h2 {
+            color: @fg-color;
+        }
+    }
+}
+
+.blocks {
+    border-right: 1px solid @fg-color;
+    border-right-style: dotted;
+
+    p {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .main-container{width: 100%;overflow-y: scroll;}
+    .blocks {border-right: none;border-bottom: 1px solid @fg-color;border-bottom-style: dotted;}
+}
+
+.btn-download {
+    padding: 12px 14px;
+    color: @fg-color;
+    background-color: @mainbg;
+    outline: none;
+    border: 2px solid @fg-color;
+    font-weight: bold;
+    -webkit-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    border-radius: 0;
+
+    &:hover {
+        transition-duration: 0.5s;
+        background-color: @fg-color;
+        color: @mainbg;
+    }
+}
+
+.progress-skill {
+    width: @progress-width;
+    height: @progress-height;
+    background-color: @progressbg;
+    overflow: hidden;
+
+    .progress-skill-inner {
+        background-color: @fg-color;
+        height: 100%;
+        color: @bg-color;
+        font-weight: bold;
+        text-align: center;
+    }
 }
