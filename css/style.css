@@ -295,6 +295,7 @@ body {
   color: #17181B;
   font-weight: bold;
   text-align: center;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .progress-skill {
