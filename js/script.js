@@ -37,7 +37,7 @@ $(document).ready(function() {
     var mailValue = $("input[type=\"email\"]"); // get value from mail field
     var textValue = $("#msg"); // get value from text field
 
-    $("form[method=\"get\"]").on("submit", function() {
+    $("form[method=\"post\"]").on("submit", function() {
         if(nameValue.val() == "" || nameValue.val() == null) {
             nameValue.css({
                 "border" : "2px solid red",
