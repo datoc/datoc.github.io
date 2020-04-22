@@ -9,6 +9,14 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <script type="text/javascript" language="javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" language="javascript" src="js/script.js"></script>
+
+        <style type="text/css">
+            @media screen and (max-width: 768px) {
+                #cent {
+                    margin-top: 100px;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="left-container">
@@ -50,22 +58,15 @@
                 </div>
             </div>
             <div class="container">
-                <div class="col-md-offset-2">
-                    <form method="post" action="https://mailsenders.herokuapp.com/send">
-                        <div class="form-group">
-                            <input type="text" placeholder="Name" name="Name" class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="E-mail" name="email" class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <textarea placeholder="How can I help you?" name="text" class="col-md-8 col-xs-12 col-sm-12 txt" id="msg"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Send" class="col-md-4 col-lg-4 col-sm-12 col-xs-12 send">
-                        </div>
-                    </form>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" id="cent">
+                    <i class="fa fa-map-marker" style="font-size: 50px; color: #B1986F"></i>
+                    <br>
+                    <p style="color: #B1986F">Gori, Georgia</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" id="cent">
+                    <i class="fa fa-envelope" style="font-size: 50px; color: #B1986F"></i>
+                    <br>
+                    <p><a href="mailto:chechelashvili.dato111@gmail.com" style="color: #B1986F">chechelashvili.dato111@gmail.com</a></p>
                 </div>
             </div>
         </div>
