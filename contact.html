@@ -16,12 +16,19 @@
                     margin-top: 100px;
                 }
             }
+
+            @media screen and (max-width: 768px) {
+                #mjj {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="left-container">
             <a href="javascript:void(0)" class="onclose">&times;</a>
             <div class="inner-container">
+                <img src="images/dev.jpg" class="img-responsive" id="mjj">
                 <ul class="list-unstyled menu">
                     <li id="d">
                         <a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
@@ -31,6 +38,9 @@
                     </li>
                     <li id="d">
                         <a href="skills.html"><i class="fa fa-code"></i>&nbsp;&nbsp;&nbsp;My&nbsp;Skills</a>
+                    </li>
+                    <li id="d">
+                        <a href="projects.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;&nbsp;Projects</a>
                     </li>
                     <li id="d">
                         <a href="contact.html"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;Contact&nbsp;Me</a>

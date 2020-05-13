@@ -235,7 +235,8 @@ body {
   background-color: #2C2D2F;
   top: 0;
   right: 0;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .main-container .page-header {
   border-bottom: 2px solid #B1986F;
@@ -349,13 +350,12 @@ input[type="email"] {
     box-sizing: border-box !important;
   }
 }
-.send {
-  margin-top: 20px;
-  padding: 8px 10px;
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #202020;
+}
+
+::-webkit-scrollbar-thumb {
   background-color: #B1986F;
-  color: #17181B;
-  border: none;
-  outline: none;
-  margin-left: 10px;
-  border-radius: 0px;
 }
