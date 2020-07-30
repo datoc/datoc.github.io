@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Portfolio&nbsp;of&nbsp;David&nbsp;Chechelashvili</title>
+	<script type="text/javascript" language="javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="left-panel">
+		<div class="top-logo">
+			<a href="index.html">D</a>
+		</div>
+		<div class="navigation-vertical">
+			<ul>
+				<li>
+					<a href="index.html"><i class="fa fa-home" style="font-size: 20px;"></i><br><span style="margin-left: 50px;">HOME</span></a>
+				</li>
+				<br>
+				<hr size="1px" color="#b0914f">
+				<li>
+					<a href="about.html"><i class="fa fa-user" style="font-size: 20px;"></i><br><span style="margin-left: 45px;">ABOUT</span></a>
+				</li>
+				<br>
+				<hr size="1px" color="#b0914f">
+				<li>
+					<a href="portfolio.html"><i class="fa fa-image" style="font-size: 20px;"></i><br><span style="margin-left: 30px;">PORTFOLIO</span></a>
+				</li>
+				<br>
+				<hr size="1px" color="#b0914f">
+				<li>
+					<a href="contact.html"><i class="fa fa-envelope" style="font-size: 20px;"></i><br><span style="margin-left: 35px;">CONTACT</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="social-icons-block">
+			<div class="fb-blok">
+				<a href="#"><i class="fab fa-facebook-f" style="color: #b0914f;"></i></a>
+			</div>
+			<div class="fb-blok">
+				<a href="#"><i class="fab fa-twitter" style="color: #b0914f;"></i></a>
+			</div>
+			<div class="fb-blok">
+				<a href="#"><i class="fab fa-instagram" style="color: #b0914f;"></i></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" language="javascript">
+		function Zoom_Image(Image_Element) {
+			var zoomed_img_block = document.getElementById("blok1");
+			zoomed_img_block.style.display = "block";
+			var insimg = document.getElementById("imginside");
+			insimg.src = Image_Element.src;
+		}
+	</script>
+	<div class="websites_photos_block" id="porfolio_block">
+		<div class="photo_of_portfolio_block" id="cvb">
+			<img src="photos/screencapture-file-C-Users-Fluge-Desktop-about-20me-index-html-1489911817914.png" alt="online_cv_template" onclick="Zoom_Image(this)">
+		</div>
+		<div class="photo_of_portfolio_block">
+			<img src="photos/screencapture-localhost-Travel-20template-Travel-html-1496503435322.png" alt="travel_agency_template" onclick="Zoom_Image(this)">
+		</div>
+		<div class="photo_of_portfolio_block">
+			<img src="photos/screencapture-file-C-Users-Fluge-Desktop-Construction-index-html-1498375890359.png" alt="building_company_template" onclick="Zoom_Image(this)">
+		</div>
+		<div class="photo_of_portfolio_block">
+			<img src="photos/screencapture-file-C-Users-Fluge-Desktop-E1-83-9E-E1-83-9D-E1-83-A0-E1-83-A2-E1-83-A4-E1-83-9D-E1-83-9A-E1-83-98-E1-83-9D-Online-20shop-index-html-1496598571998.png" alt="online_shopping_template" onclick="Zoom_Image(this)">
+		</div>
+	</div>
+
+	<div class="myImage" id="blok1">
+		<a href="#" class="close">&times;</a>
+		<img src="" id="imginside">
+	</div>
+</body>
+</html>
