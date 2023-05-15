@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "youtube-video-js": "^3.6.1"
+  }
+}
